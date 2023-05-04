@@ -18,7 +18,7 @@
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="wrap_content">
 
                 <ImageView
                     android:id="@+id/imageView3"
@@ -36,7 +36,7 @@
                     android:layout_height="wrap_content"
                     android:text="Time Manga"
                     android:textColor="#ff7F00"
-                    android:textSize="30sp"
+                    android:textSize="30dp"
                     android:textStyle="bold"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toStartOf="@+id/imageView3"
@@ -48,11 +48,23 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Salam les frères"
-                    android:textSize="17sp"
                     android:textColor="#FFFFFF"
+                    android:textSize="17sp"
                     app:layout_constraintEnd_toEndOf="@+id/textView2"
                     app:layout_constraintStart_toStartOf="@+id/textView2"
                     app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Rechercher un Manga"
+                    android:textColor="#ffffff"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView3"
+                    app:layout_goneMarginStart="24dp" />
+
             </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>
     </ScrollView>
