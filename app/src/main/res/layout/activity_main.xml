@@ -36,7 +36,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Time Manga"
-                    android:textColor="#FFFFFF"
+                    android:textColor="#FF7F00"
                     android:textSize="20sp"
                     android:textStyle="bold"
                     app:layout_constraintEnd_toStartOf="@+id/imageView"
@@ -49,7 +49,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Salam les Frères"
-                    android:textColor="#FF7F00"
+                    android:textColor="#FFFFFF"
                     android:textSize="17sp"
                     app:layout_constraintBottom_toBottomOf="@+id/imageView"
                     app:layout_constraintEnd_toEndOf="@+id/textView2"
@@ -75,20 +75,35 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="24dp"
+                    android:layout_marginEnd="24dp"
                     android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/textView4">
 
                     <EditText
                         android:id="@+id/editTextText2"
-                        android:background="@drawable/edittext_background"
                         android:layout_width="wrap_content"
-                        android:layout_height="45dp"
+                        android:layout_height="48dp"
                         android:layout_weight="1"
+                        android:background="@drawable/edittext_background"
                         android:ems="10"
+                        android:hint="Cherche un Manga"
                         android:inputType="textPersonName"
-                        android:hint="Cherche ton Manga"
-                        android:textColor="#d5d5d5"/>
+                        android:textColor="#d5d5d5"
+                        android:textColorHint="#d5d5d5"
+                        android:textSize="14sp"
+                        android:textStyle="italic"
+                        android:drawableStart="@drawable/search"
+                        android:padding="8dp"
+                        android:drawablePadding="8dp" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
                 </LinearLayout>
 
             </androidx.constraintlayout.widget.ConstraintLayout>
