@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-        <style name="TimeManga" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <style name="Theme.TimeManga" parent="Theme.MaterialComponents.DayNight.NoActionBar">
             <!-- Primary brand color. -->
             <item name="colorPrimary">#282836</item>
             <item name="colorPrimaryVariant">#282836</item>
