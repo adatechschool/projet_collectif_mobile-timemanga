@@ -1,6 +1,6 @@
 package com.timemanga.Adapter;
 
-import android.view.LayoutInflater;
+import  android.view.LayoutInflater;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
@@ -26,3 +26,4 @@ public class CategoryAdapter extends RecyclerView.Adapter {
         return 0;
     }
 }
+
