@@ -35,9 +35,9 @@ public class MainActivity extends AppCompatActivity {
         recyclerViewlastList.setLayoutManager(linearLayoutManager);
 
         ArrayList<LastMangaDomain> lastMangaDomains=new ArrayList<>();
-        lastMangaDomains.add(new LastMangaDomain("Cheese Burger", "fast_1", 9.0, 20));
-        lastMangaDomains.add(new LastMangaDomain("Pepperoni Pizza", "fast_2", 8.1, 16));
-        lastMangaDomains.add(new LastMangaDomain("Vegetable Pizza", "fast_3", 9.5, 16));
+        lastMangaDomains.add(new LastMangaDomain("Demon Slayer", "fast_1", 4.8, 24));
+        lastMangaDomains.add(new LastMangaDomain("Jujutsu Kaisen", "fast_2", 4.7, 25));
+        lastMangaDomains.add(new LastMangaDomain("Attack on titan", "fast_3", 4.9, 61));
 
         adapter2 = new LastMangaAdapter(lastMangaDomains);
         recyclerViewlastList.setAdapter(adapter2);
