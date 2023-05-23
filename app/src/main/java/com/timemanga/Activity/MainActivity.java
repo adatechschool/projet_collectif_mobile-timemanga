@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
@@ -16,7 +17,7 @@ import com.timemanga.R;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
-    private RecyclerView.Adapter adapter,adapter2;
+    private RecyclerView.Adapter adapter, adapter2;
     private RecyclerView recyclerViewCategory, recyclerViewlastList;
 
     @Override
@@ -34,7 +35,11 @@ public class MainActivity extends AppCompatActivity {
         recyclerViewlastList = findViewById(R.id.view2);
         recyclerViewlastList.setLayoutManager(linearLayoutManager);
 
+<<<<<<< HEAD
         ArrayList<LastMangaDomain> lastMangaDomains=new ArrayList<>();
+=======
+        ArrayList<LastMangaDomain> lastMangaDomains = new ArrayList<>();
+>>>>>>> 10fa600 (new page for all cats)
         lastMangaDomains.add(new LastMangaDomain("Demon Slayer", "fast_1", 4.8, 24));
         lastMangaDomains.add(new LastMangaDomain("Jujutsu Kaisen", "fast_2", 4.7, 25));
         lastMangaDomains.add(new LastMangaDomain("Attack on titan", "fast_3", 4.9, 61));
@@ -45,17 +50,22 @@ public class MainActivity extends AppCompatActivity {
 
     private void recyclerViewCategory() {
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
-        recyclerViewCategory=findViewById(R.id.view1);
+        recyclerViewCategory = findViewById(R.id.view1);
         recyclerViewCategory.setLayoutManager(linearLayoutManager);
 
-        ArrayList<CategoryDomain> categoryList=new ArrayList<>();
-        categoryList.add(new CategoryDomain("Shonen","cat_1"));
-        categoryList.add(new CategoryDomain("Seinen","cat_2"));
-        categoryList.add(new CategoryDomain("Shojo","cat_3"));
-        categoryList.add(new CategoryDomain("Josei","cat_4"));
+        ArrayList<CategoryDomain> categoryList = new ArrayList<>();
+        categoryList.add(new CategoryDomain("Shonen", "cat_1"));
+        categoryList.add(new CategoryDomain("Seinen", "cat_2"));
+        categoryList.add(new CategoryDomain("Shojo", "cat_3"));
+        categoryList.add(new CategoryDomain("Josei", "cat_4"));
 
-        adapter=new CategoryAdapter(categoryList);
+        adapter = new CategoryAdapter(categoryList);
         recyclerViewCategory.setAdapter(adapter);
     }
-}
 
+    public void navigateToNextPage(View view) {
+        // Effectue la transition vers une autre page ici
+        Intent intent = new Intent(this, NextActivity.class);
+        startActivity(intent);
+    }
+}
