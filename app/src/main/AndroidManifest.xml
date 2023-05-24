@@ -29,6 +29,26 @@
             <!-- Ajoute d'autres attributs d'activité si nécessaire -->
         </activity>
 
+        <activity
+            android:name=".Activity.ShonenActivity">
+            <!-- Ajoute d'autres attributs d'activité si nécessaire -->
+        </activity>
+
+        <activity
+            android:name=".Activity.SeinenActivity">
+            <!-- Ajoute d'autres attributs d'activité si nécessaire -->
+        </activity>
+
+        <activity
+            android:name=".Activity.ShojoActivity">
+            <!-- Ajoute d'autres attributs d'activité si nécessaire -->
+        </activity>
+
+        <activity
+            android:name=".Activity.JoseiActivity">
+            <!-- Ajoute d'autres attributs d'activité si nécessaire -->
+        </activity>
+
     </application>
 
 </manifest>
