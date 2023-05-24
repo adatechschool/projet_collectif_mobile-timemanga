@@ -28,6 +28,26 @@
             android:name=".Activity.NextActivity">
             <!-- Ajoute d'autres attributs d'activité si nécessaire -->
         </activity>
+        <activity
+            android:name=".Activity.ShonenActivity">
+            <!-- Ajoutez d'autres attributs d'activité si nécessaire -->
+        </activity>
+
+        <activity
+            android:name=".Activity.SeinenActivity">
+            <!-- Ajoutez d'autres attributs d'activité si nécessaire -->
+        </activity>
+
+        <activity
+            android:name=".Activity.ShojoActivity">
+            <!-- Ajoutez d'autres attributs d'activité si nécessaire -->
+        </activity>
+
+        <activity
+            android:name=".Activity.JoseiActivity">
+            <!-- Ajoutez d'autres attributs d'activité si nécessaire -->
+        </activity>
+
 
     </application>
 

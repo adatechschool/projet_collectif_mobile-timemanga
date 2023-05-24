@@ -11,7 +11,11 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.timemanga.Activity.JoseiActivity;
 import com.timemanga.Activity.NextActivity;
+import com.timemanga.Activity.SeinenActivity;
+import com.timemanga.Activity.ShojoActivity;
+import com.timemanga.Activity.ShonenActivity;
 import com.timemanga.Domain.CategoryDomain;
 import com.timemanga.R;
 
@@ -63,15 +67,31 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.ViewHo
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // Gère le clic de l'élément ici
+                // Récupère la catégorie sélectionnée
+                CategoryDomain selectedCategory = categoryDomains.get(holder.getAdapterPosition());
 
-                // Crée une intention pour démarrer NextActivity
-                Intent intent = new Intent(view.getContext(), NextActivity.class);
+                // Crée une intention pour démarrer l'activité correspondante
+                Intent intent;
+                switch (selectedCategory.getTitle()) {
+                    case "Shonen":
+                        intent = new Intent(view.getContext(), ShonenActivity.class);
+                        break;
+                    case "Seinen":
+                        intent = new Intent(view.getContext(), SeinenActivity.class);
+                        break;
+                    case "Shojo":
+                        intent = new Intent(view.getContext(), ShojoActivity.class);
+                        break;
+                    case "Josei":
+                        intent = new Intent(view.getContext(), JoseiActivity.class);
+                        break;
+                    default:
+                        // Par défaut, démarrer une activité générique ou afficher un message d'erreur
+                        intent = new Intent(view.getContext(), NextActivity.class);
+                        break;
+                }
 
-                // Tu peux également passer des données supplémentaires à NextActivity si nécessaire
-                // intent.putExtra("key", value);
-
-                // Démarre NextActivity
+                // Démarrer l'activité correspondante
                 view.getContext().startActivity(intent);
             }
         });
