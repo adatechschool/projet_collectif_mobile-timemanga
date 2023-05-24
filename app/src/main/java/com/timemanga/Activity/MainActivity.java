@@ -58,4 +58,3 @@ public class MainActivity extends AppCompatActivity {
         recyclerViewCategory.setAdapter(adapter);
     }
 }
-
