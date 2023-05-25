@@ -79,7 +79,7 @@
                     android:layout_marginTop="32dp"
                     app:layout_constraintStart_toStartOf="@+id/textView2"
                     app:layout_constraintTop_toBottomOf="@+id/textView2"
-                    app:srcCompat="@drawable/One_piece" />
+                    app:srcCompat="@drawable/one_piece" />
 
                 <TextView
                     android:id="@+id/textView3"
@@ -109,10 +109,10 @@
                     android:id="@+id/imageView8"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="24dp"
+                    android:layout_marginTop="32dp"
                     app:layout_constraintStart_toStartOf="@+id/imageView7"
                     app:layout_constraintTop_toBottomOf="@+id/imageView7"
-                    app:srcCompat="@drawable/Bleach" />
+                    app:srcCompat="@drawable/bleach" />
 
                 <TextView
                     android:id="@+id/textView8"
@@ -131,7 +131,7 @@
                     android:id="@+id/imageView11"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="24dp"
+                    android:layout_marginTop="32dp"
                     app:layout_constraintStart_toStartOf="@+id/imageView8"
                     app:layout_constraintTop_toBottomOf="@+id/imageView8"
                     app:srcCompat="@drawable/naruto" />
